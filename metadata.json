@@ -228,7 +228,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-1/ctrls-path",
-          "name": "translation",
+          "name": "phase-1/ctrls-path",
           "description": "Filepath for Phase 1 control signals.",
           "dataType": "sc:Text",
           "source": {
@@ -251,7 +251,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-1/state-path",
-          "name": "translation",
+          "name": "phase-1/state-path",
           "description": "Filepath for Phase 1 trajectory state values.",
           "dataType": "sc:Text",
           "source": {
@@ -274,7 +274,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-1/model-path",
-          "name": "translation",
+          "name": "phase-1/model-path",
           "description": "Filepath for Phase 1 mujoco model files.",
           "dataType": "sc:Text",
           "source": {
@@ -297,7 +297,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-2/state-path",
-          "name": "translation",
+          "name": "phase-2/state-path",
           "description": "Filepath for Phase 2 trajectory state values.",
           "dataType": "sc:Text",
           "source": {
@@ -320,7 +320,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-2/model-path",
-          "name": "translation",
+          "name": "phase-2/model-path",
           "description": "Filepath for Phase 2 mujoco model files.",
           "dataType": "sc:Text",
           "source": {
@@ -343,7 +343,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-3/state-path",
-          "name": "translation",
+          "name": "phase-3/state-path",
           "description": "Filepath for Phase 3 trajectory state values.",
           "dataType": "sc:Text",
           "source": {
@@ -366,7 +366,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-3/model-path",
-          "name": "translation",
+          "name": "phase-3/model-path",
           "description": "Filepath for Phase 3 mujoco model files.",
           "dataType": "sc:Text",
           "source": {
@@ -389,7 +389,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-4/model-path",
-          "name": "translation",
+          "name": "phase-4/model-path",
           "description": "Filepath for Phase 4 mujoco model files.",
           "dataType": "sc:Text",
           "source": {
@@ -412,7 +412,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-5/state-path",
-          "name": "translation",
+          "name": "phase-5/state-path",
           "description": "Filepath for Phase 5 trajectory state values.",
           "dataType": "sc:Text",
           "source": {
@@ -435,7 +435,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-5/model-path",
-          "name": "translation",
+          "name": "phase-5/model-path",
           "description": "Filepath for Phase 5 mujoco model files.",
           "dataType": "sc:Text",
           "source": {
@@ -458,7 +458,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-6/model-path",
-          "name": "translation",
+          "name": "phase-6/model-path",
           "description": "Filepath for Phase 6 mujoco model files.",
           "dataType": "sc:Text",
           "source": {
@@ -481,7 +481,7 @@
         {
           "@type": "cr:Field",
           "@id": "phase-7/model-path",
-          "name": "translation",
+          "name": "phase-7/model-path",
           "description": "Filepath for Phase 7 mujoco model files.",
           "dataType": "sc:Text",
           "source": {
