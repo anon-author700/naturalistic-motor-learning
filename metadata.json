@@ -1,0 +1,499 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "naturalistic-motor-learning",
+  "description": "Naturalistic motor learning is a dataset for motor learning in a naturalistic environment, as defined in the accompanying manuscript under review at NeurIPS Datasets and Benchmarks track.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "",
+  "license": "MIT",
+  "url": "https://github.com/anon-author700/naturalistic-motor-learning",
+  "version": "0.0.1",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "amazon-repo",
+      "name": "amazon-repo",
+      "description": "This dataset is hosted on Amazon Cloud S3.",
+      "contentSize": "35.8 MB",
+      "contentUrl": "https://naturalistic-motor-learning.s3.amazonaws.com/data.zip",
+      "encodingFormat": "application/zip",
+      "sha256": "e3505ebe6478717d5b1015db0b6335830e7ef049c3e367c6df2086547c144728"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-1-ctrls",
+      "name": "phase-1-ctrls",
+      "description": "Phase 1 control signals.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_1/*ctrls.npy"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-1-state",
+      "name": "phase-1-state",
+      "description": "Phase 1 trajectory state values.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_1/*states.npy"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-1-contact",
+      "name": "phase-1-contact",
+      "description": "Phase 1 contact sensory values.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_1/*contact.npy"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-1-model",
+      "name": "phase-1-model",
+      "description": "Phase 1 mujoco model files.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_1/*.xml"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-2-state",
+      "name": "phase-2-state",
+      "description": "Phase 2 demonstrator trajectory state values.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_2/*states.npy"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-2-model",
+      "name": "phase-2-model",
+      "description": "Phase 2 mujoco model files.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_2/*.xml"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-3-state",
+      "name": "phase-3-state",
+      "description": "Phase 3 demonstrator trajectory state values.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_2/*states.npy"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-3-model",
+      "name": "phase-3-model",
+      "description": "Phase 3 mujoco model files.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_3/*.xml"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-4-model",
+      "name": "phase-4-model",
+      "description": "Phase 4 mujoco model files.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_4/*.xml"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-5-state",
+      "name": "phase-5-state",
+      "description": "Phase 5 demonstrator trajectory state values.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_5/*states.npy"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-5-model",
+      "name": "phase-5-model",
+      "description": "Phase 5 mujoco model files.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_5/*.xml"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-6-model",
+      "name": "phase-6-model",
+      "description": "Phase 6 mujoco model files.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_6/*.xml"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-7-state",
+      "name": "phase-7-state",
+      "description": "Phase 7 demonstrator trajectory state values.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_7/*states.npy"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "phase-7-model",
+      "name": "phase-7-model",
+      "description": "Phase 7 mujoco model files.",
+      "containedIn": {
+        "@id": "amazon-repo"
+      },
+      "encodingFormat": "text/plain",
+      "includes": "data/phase_7/*.xml"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-1/ctrls",
+      "name": "phase-1/ctrls",
+      "description": "Phase 1 control signals.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-1/ctrls-path",
+          "name": "translation",
+          "description": "Filepath for Phase 1 control signals.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-1-ctrls"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-1/state",
+      "name": "phase-1/state",
+      "description": "Phase 1 trajectory state values.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-1/state-path",
+          "name": "translation",
+          "description": "Filepath for Phase 1 trajectory state values.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-1-state"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-1/model",
+      "name": "phase-1/model",
+      "description": "Phase 1 mujoco model files.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-1/model-path",
+          "name": "translation",
+          "description": "Filepath for Phase 1 mujoco model files.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-1-model"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-2/state",
+      "name": "phase-2/state",
+      "description": "Phase 2 trajectory state values.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-2/state-path",
+          "name": "translation",
+          "description": "Filepath for Phase 2 trajectory state values.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-2-state"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-2/model",
+      "name": "phase-2/model",
+      "description": "Phase 2 mujoco model files.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-2/model-path",
+          "name": "translation",
+          "description": "Filepath for Phase 2 mujoco model files.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-2-model"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-3/state",
+      "name": "phase-3/state",
+      "description": "Phase 3 trajectory state values.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-3/state-path",
+          "name": "translation",
+          "description": "Filepath for Phase 3 trajectory state values.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-3-state"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-3/model",
+      "name": "phase-3/model",
+      "description": "Phase 3 mujoco model files.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-3/model-path",
+          "name": "translation",
+          "description": "Filepath for Phase 3 mujoco model files.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-3-model"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-4/model",
+      "name": "phase-4/model",
+      "description": "Phase 4 mujoco model files.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-4/model-path",
+          "name": "translation",
+          "description": "Filepath for Phase 4 mujoco model files.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-4-model"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-5/state",
+      "name": "phase-5/state",
+      "description": "Phase 5 trajectory state values.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-5/state-path",
+          "name": "translation",
+          "description": "Filepath for Phase 5 trajectory state values.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-5-state"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-5/model",
+      "name": "phase-5/model",
+      "description": "Phase 5 mujoco model files.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-5/model-path",
+          "name": "translation",
+          "description": "Filepath for Phase 5 mujoco model files.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-5-model"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-6/model",
+      "name": "phase-6/model",
+      "description": "Phase 6 mujoco model files.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-6/model-path",
+          "name": "translation",
+          "description": "Filepath for Phase 6 mujoco model files.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-6-model"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "phase-7/model",
+      "name": "phase-7/model",
+      "description": "Phase 7 mujoco model files.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "phase-7/model-path",
+          "name": "translation",
+          "description": "Filepath for Phase 7 mujoco model files.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "phase-7-model"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
