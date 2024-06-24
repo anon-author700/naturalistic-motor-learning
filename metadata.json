@@ -152,7 +152,7 @@
           "@type": "cr:Field",
           "@id": "phase-1/base",
           "name": "phase-1/base",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 1 base filenames.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -167,7 +167,7 @@
           "@type": "cr:Field",
           "@id": "phase-1/type",
           "name": "phase-1/type",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 1 types of data (ctrls, state, or sensor).",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -182,7 +182,7 @@
           "@type": "cr:Field",
           "@id": "phase-1/k",
           "name": "phase-1/k",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 1 k indices.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -197,7 +197,7 @@
           "@type": "cr:Field",
           "@id": "phase-1/dir",
           "name": "phase-1/dir",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 1 directories.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -212,7 +212,7 @@
           "@type": "cr:Field",
           "@id": "phase-1/filename",
           "name": "phase-1/filename",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 1 filenames.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -227,7 +227,7 @@
           "@type": "cr:Field",
           "@id": "phase-1/scene_xml",
           "name": "phase-1/scene_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 1 scene model files.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -242,7 +242,7 @@
           "@type": "cr:Field",
           "@id": "phase-1/humanoid_xml",
           "name": "phase-1/humanoid_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 1 humanoid model files.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -257,7 +257,7 @@
           "@type": "cr:Field",
           "@id": "phase-1/combo_xml",
           "name": "phase-1/combo_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 1 combined model files.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -274,13 +274,13 @@
       "@type": "cr:RecordSet",
       "@id": "phase-2",
       "name": "phase-2",
-      "description": "Phase 1.",
+      "description": "Phase 2.",
       "field": [
         {
           "@type": "cr:Field",
           "@id": "phase-2/base",
           "name": "phase-2/base",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 2 filename base.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -295,7 +295,7 @@
           "@type": "cr:Field",
           "@id": "phase-2/type",
           "name": "phase-2/type",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 1 control signals.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -310,7 +310,7 @@
           "@type": "cr:Field",
           "@id": "phase-2/k",
           "name": "phase-2/k",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 2 type of data (ctrls, state, or sensor).",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -325,7 +325,7 @@
           "@type": "cr:Field",
           "@id": "phase-2/dir",
           "name": "phase-2/dir",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 2 directories.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -340,7 +340,7 @@
           "@type": "cr:Field",
           "@id": "phase-2/filename",
           "name": "phase-2/filename",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 2 filenames.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -355,7 +355,7 @@
           "@type": "cr:Field",
           "@id": "phase-2/scene_xml",
           "name": "phase-2/scene_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 2 scene model files.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -370,7 +370,7 @@
           "@type": "cr:Field",
           "@id": "phase-2/humanoid_xml",
           "name": "phase-2/humanoid_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 2 humanoid model files.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -385,7 +385,7 @@
           "@type": "cr:Field",
           "@id": "phase-2/combo_xml",
           "name": "phase-2/combo_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 2 combo model files.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -402,13 +402,13 @@
       "@type": "cr:RecordSet",
       "@id": "phase-3",
       "name": "phase-3",
-      "description": "Phase 1.",
+      "description": "Phase 3.",
       "field": [
         {
           "@type": "cr:Field",
           "@id": "phase-3/base",
           "name": "phase-3/base",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 3 filename base.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -423,7 +423,7 @@
           "@type": "cr:Field",
           "@id": "phase-3/type",
           "name": "phase-3/type",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 3 type of data (ctrls, state, or sensor).",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -438,7 +438,7 @@
           "@type": "cr:Field",
           "@id": "phase-3/k",
           "name": "phase-3/k",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 3 k indices.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -453,7 +453,7 @@
           "@type": "cr:Field",
           "@id": "phase-3/dir",
           "name": "phase-3/dir",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 3 directory.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -468,7 +468,7 @@
           "@type": "cr:Field",
           "@id": "phase-3/filename",
           "name": "phase-3/filename",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 3 filenames.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -483,7 +483,7 @@
           "@type": "cr:Field",
           "@id": "phase-3/scene_xml",
           "name": "phase-3/scene_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 3 scene model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -498,7 +498,7 @@
           "@type": "cr:Field",
           "@id": "phase-3/humanoid_xml",
           "name": "phase-3/humanoid_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 3 humanoid model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -513,7 +513,7 @@
           "@type": "cr:Field",
           "@id": "phase-3/combo_xml",
           "name": "phase-3/combo_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 3 combo model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -536,7 +536,7 @@
           "@type": "cr:Field",
           "@id": "phase-4/scene_xml",
           "name": "phase-4/scene_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 4 scene model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -551,7 +551,7 @@
           "@type": "cr:Field",
           "@id": "phase-4/humanoid_xml",
           "name": "phase-4/humanoid_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 4 humanoid model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -566,7 +566,7 @@
           "@type": "cr:Field",
           "@id": "phase-4/combo_xml",
           "name": "phase-4/combo_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 4 combo model file..",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -583,13 +583,13 @@
       "@type": "cr:RecordSet",
       "@id": "phase-5",
       "name": "phase-5",
-      "description": "Phase 1.",
+      "description": "Phase 5.",
       "field": [
         {
           "@type": "cr:Field",
           "@id": "phase-5/base",
           "name": "phase-5/base",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 5 filename base.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -604,7 +604,7 @@
           "@type": "cr:Field",
           "@id": "phase-5/type",
           "name": "phase-5/type",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 5 type of data (ctrls, state, or sensor).",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -619,7 +619,7 @@
           "@type": "cr:Field",
           "@id": "phase-5/k",
           "name": "phase-5/k",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 5 k indices.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -634,7 +634,7 @@
           "@type": "cr:Field",
           "@id": "phase-5/dir",
           "name": "phase-5/dir",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 5 directory.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -649,7 +649,7 @@
           "@type": "cr:Field",
           "@id": "phase-5/filename",
           "name": "phase-5/filename",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 5 filenames.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -664,7 +664,7 @@
           "@type": "cr:Field",
           "@id": "phase-5/scene_xml",
           "name": "phase-5/scene_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 5 scene model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -679,7 +679,7 @@
           "@type": "cr:Field",
           "@id": "phase-5/humanoid_xml",
           "name": "phase-5/humanoid_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 5 humanoid model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -694,7 +694,7 @@
           "@type": "cr:Field",
           "@id": "phase-5/combo_xml",
           "name": "phase-5/combo_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 5 combo model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -711,13 +711,13 @@
       "@type": "cr:RecordSet",
       "@id": "phase-6",
       "name": "phase-6",
-      "description": "Phase 4.",
+      "description": "Phase 6.",
       "field": [
         {
           "@type": "cr:Field",
           "@id": "phase-6/scene_xml",
           "name": "phase-6/scene_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 6 scene model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -732,7 +732,7 @@
           "@type": "cr:Field",
           "@id": "phase-6/humanoid_xml",
           "name": "phase-6/humanoid_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 6 humanoid model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -747,7 +747,7 @@
           "@type": "cr:Field",
           "@id": "phase-6/combo_xml",
           "name": "phase-6/combo_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 6 combo model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -764,13 +764,13 @@
       "@type": "cr:RecordSet",
       "@id": "phase-7",
       "name": "phase-7",
-      "description": "Phase 4.",
+      "description": "Phase 7.",
       "field": [
         {
           "@type": "cr:Field",
           "@id": "phase-7/scene_xml",
           "name": "phase-7/scene_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 7 scene model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -785,7 +785,7 @@
           "@type": "cr:Field",
           "@id": "phase-7/humanoid_xml",
           "name": "phase-7/humanoid_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 7 humanoid model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
@@ -800,7 +800,7 @@
           "@type": "cr:Field",
           "@id": "phase-7/combo_xml",
           "name": "phase-7/combo_xml",
-          "description": "Filepath for Phase 1 control signals.",
+          "description": "Phase 7 combo model file.",
           "dataType": "sc:Text",
           "source": {
             "fileObject": {
