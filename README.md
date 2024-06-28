@@ -25,3 +25,5 @@ file_loc = file_dir + '/' + file_name
 data = np.load(file_loc)
 print(data.shape)
 ```
+
+Within certain subdirectories of the data directory (each corresponding to a phase of the task) is a helper python file for computing successful target hits and rewards.
