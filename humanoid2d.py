@@ -1,4 +1,4 @@
-__credits__ = ["Kallinteris-Andreas", "Matthew Farrell"]
+__credits__ = ["Kallinteris-Andreas"]
 
 from typing import Dict, Tuple, Union, Optional
 
