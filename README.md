@@ -29,3 +29,9 @@ print(data.shape)
 Within certain subdirectories of the data directory (each corresponding to a phase of the task) is a helper python file for computing successful target hits and rewards.
 
 A Gymnasium (https://gymnasium.farama.org/) environment called Humanoid2dEnv is available in humanoid2d.py. This can be used to render the simulations.
+
+An example of loading data and rendering the simulation can be found in "example_run.py". Run this with
+
+```
+python example_run.py
+'''
