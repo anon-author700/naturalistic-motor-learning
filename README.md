@@ -9,7 +9,7 @@ wget https://naturalistic-motor-learning.s3.amazonaws.com/data.zip
 unzip data.zip
 ```
 
-Then in Python one could do:
+Then in Python one could do (assuming the folder ''data'' is in the github repository's root directory):
 
 ```
 import mlcroissant as mlc
@@ -30,7 +30,7 @@ Within certain subdirectories of the data directory (each corresponding to a pha
 
 A Gymnasium (https://gymnasium.farama.org/) environment called Humanoid2dEnv is available in humanoid2d.py. This can be used to render the simulations.
 
-An example of loading data and rendering the simulation can be found in "example_run.py". Run this with
+An example of loading data and rendering the simulation can be found in "example_run.py". Make sure ''data'' is in the github repository's root directory and run
 
 ```
 python example_run.py
